@@ -1,0 +1,454 @@
+/* ============================================
+   AFM THEME - ORANGE COLOR SCHEME
+   ============================================ */
+
+.afm-app {
+  --bg-primary: #0f1419;
+  --bg-secondary: #1a1f2e;
+  --bg-card: #242b3d;
+  --bg-hover: #2d3648;
+  --text-primary: #f1f5f9;
+  --text-secondary: #94a3b8;
+  --accent: #f97316;           /* Orange-500 */
+  --accent-light: #fb923c;     /* Orange-400 */
+  --accent-dark: #ea580c;      /* Orange-600 */
+  --accent-gradient: linear-gradient(135deg, #f97316 0%, #dc2626 100%);
+  --success: #10b981;
+  --error: #ef4444;
+  --warning: #fbbf24;
+  --card-glow: rgba(249, 115, 22, 0.15);
+}
+
+/* ============================================
+   HEADER OVERRIDES
+   ============================================ */
+
+.afm-app .app-header {
+  border-bottom: 1px solid rgba(249, 115, 22, 0.1);
+}
+
+.afm-app .logo-text h1 {
+  background: linear-gradient(135deg, #f97316 0%, #ea580c 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.afm-app .nav-btn.active {
+  background: rgba(249, 115, 22, 0.15);
+  color: var(--accent);
+  border-color: rgba(249, 115, 22, 0.3);
+}
+
+/* ============================================
+   DASHBOARD OVERRIDES
+   ============================================ */
+
+.afm-app .dashboard-hero {
+  background: linear-gradient(135deg, #242b3d 0%, #1a1f2e 100%);
+  border: 1px solid rgba(249, 115, 22, 0.1);
+}
+
+.afm-app .hero-content h2 {
+  background: linear-gradient(135deg, #f97316 0%, #ea580c 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.afm-app .stat-card {
+  background: linear-gradient(135deg, #242b3d 0%, #1a1f2e 100%);
+  border: 1px solid rgba(249, 115, 22, 0.1);
+}
+
+.afm-app .stat-card:hover {
+  box-shadow: 0 8px 32px rgba(249, 115, 22, 0.15);
+  border-color: rgba(249, 115, 22, 0.3);
+}
+
+.afm-app .progress-value {
+  background: linear-gradient(135deg, #f97316 0%, #ea580c 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.afm-app .action-card {
+  background: linear-gradient(135deg, #242b3d 0%, #1a1f2e 100%);
+  border: 1px solid rgba(249, 115, 22, 0.1);
+}
+
+.afm-app .action-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 32px rgba(249, 115, 22, 0.15);
+  border-color: rgba(249, 115, 22, 0.3);
+}
+
+.afm-app .action-icon {
+  background: rgba(249, 115, 22, 0.1);
+  color: var(--accent);
+}
+
+.afm-app .topic-card {
+  background: linear-gradient(135deg, #242b3d 0%, #1a1f2e 100%);
+  border: 1px solid rgba(249, 115, 22, 0.1);
+}
+
+.afm-app .topic-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 32px rgba(249, 115, 22, 0.15);
+  border-color: rgba(249, 115, 22, 0.3);
+}
+
+.afm-app .progress-fill {
+  background: linear-gradient(90deg, #f97316 0%, #fb923c 100%);
+}
+
+.afm-app .topic-badge {
+  background: rgba(249, 115, 22, 0.15);
+  color: #fb923c;
+  border: 1px solid rgba(249, 115, 22, 0.3);
+}
+
+/* ============================================
+   MCQ PRACTICE OVERRIDES
+   ============================================ */
+
+.afm-app .case-scenario {
+  background: linear-gradient(135deg, #242b3d 0%, #1a1f2e 100%);
+  border: 1px solid rgba(249, 115, 22, 0.1);
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.afm-app .case-scenario h4 {
+  color: var(--accent);
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.afm-app .case-scenario pre {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  line-height: 1.6;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.afm-app .option-card {
+  background: linear-gradient(135deg, #242b3d 0%, #1a1f2e 100%);
+  border: 1px solid rgba(249, 115, 22, 0.1);
+}
+
+.afm-app .option-card:hover {
+  border-color: rgba(249, 115, 22, 0.3);
+  box-shadow: 0 4px 16px rgba(249, 115, 22, 0.1);
+}
+
+.afm-app .option-card.selected {
+  border-color: var(--accent);
+  background: rgba(249, 115, 22, 0.1);
+}
+
+.afm-app .option-card.correct {
+  border-color: var(--success);
+  background: rgba(16, 185, 129, 0.1);
+}
+
+.afm-app .option-card.incorrect {
+  border-color: var(--error);
+  background: rgba(239, 68, 68, 0.1);
+}
+
+.afm-app .btn-primary {
+  background: linear-gradient(135deg, #f97316 0%, #ea580c 100%);
+  color: white;
+  border: none;
+}
+
+.afm-app .btn-primary:hover {
+  background: linear-gradient(135deg, #fb923c 0%, #f97316 100%);
+  box-shadow: 0 4px 16px rgba(249, 115, 22, 0.3);
+}
+
+.afm-app .btn-secondary {
+  background: rgba(249, 115, 22, 0.1);
+  color: var(--accent);
+  border: 1px solid rgba(249, 115, 22, 0.3);
+}
+
+.afm-app .btn-secondary:hover {
+  background: rgba(249, 115, 22, 0.2);
+}
+
+.afm-app .result-banner.correct {
+  background: rgba(16, 185, 129, 0.1);
+  border: 1px solid rgba(16, 185, 129, 0.3);
+  color: var(--success);
+}
+
+.afm-app .result-banner.incorrect {
+  background: rgba(239, 68, 68, 0.1);
+  border: 1px solid rgba(239, 68, 68, 0.3);
+  color: var(--error);
+}
+
+.afm-app .explanation-container {
+  background: linear-gradient(135deg, #242b3d 0%, #1a1f2e 100%);
+  border: 1px solid rgba(249, 115, 22, 0.1);
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.afm-app .explanation-container h4 {
+  color: var(--accent);
+  margin-bottom: 1rem;
+}
+
+.afm-app .explanation-content pre {
+  color: var(--text-secondary);
+  line-height: 1.8;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.afm-app .mistake-analysis {
+  margin-top: 1rem;
+  padding: 1rem;
+  background: rgba(239, 68, 68, 0.05);
+  border-left: 3px solid var(--error);
+  border-radius: 6px;
+}
+
+.afm-app .mistake-analysis h5 {
+  color: var(--error);
+  margin-bottom: 0.5rem;
+}
+
+.afm-app .palette-btn.current {
+  background: var(--accent);
+  color: white;
+  border-color: var(--accent);
+}
+
+.afm-app .palette-btn.answered-correct {
+  background: rgba(16, 185, 129, 0.2);
+  border-color: var(--success);
+}
+
+.afm-app .palette-btn.answered-incorrect {
+  background: rgba(239, 68, 68, 0.2);
+  border-color: var(--error);
+}
+
+/* ============================================
+   LONG ANSWER PRACTICE OVERRIDES
+   ============================================ */
+
+.afm-app .case-study-container {
+  background: linear-gradient(135deg, #242b3d 0%, #1a1f2e 100%);
+  border: 1px solid rgba(249, 115, 22, 0.1);
+  border-radius: 12px;
+  padding: 2rem;
+}
+
+.afm-app .answer-textarea {
+  background: var(--bg-secondary);
+  border: 1px solid rgba(249, 115, 22, 0.2);
+  color: var(--text-primary);
+  border-radius: 8px;
+  padding: 1rem;
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  resize: vertical;
+  transition: all 0.2s ease;
+}
+
+.afm-app .answer-textarea:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px rgba(249, 115, 22, 0.1);
+  outline: none;
+}
+
+.afm-app .model-answer-section {
+  background: linear-gradient(135deg, #242b3d 0%, #1a1f2e 100%);
+  border: 1px solid rgba(249, 115, 22, 0.1);
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-top: 2rem;
+}
+
+.afm-app .model-answer-section h3 {
+  color: var(--accent);
+  margin-bottom: 1rem;
+}
+
+.afm-app .model-answer-content pre {
+  color: var(--text-secondary);
+  line-height: 1.8;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.afm-app .self-evaluation-section {
+  background: linear-gradient(135deg, #242b3d 0%, #1a1f2e 100%);
+  border: 1px solid rgba(249, 115, 22, 0.1);
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-top: 2rem;
+}
+
+.afm-app .self-evaluation-section h3 {
+  color: var(--accent);
+  margin-bottom: 1rem;
+}
+
+.afm-app .rubric-item {
+  background: var(--bg-secondary);
+  border: 1px solid rgba(249, 115, 22, 0.1);
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.afm-app .score-input input {
+  background: var(--bg-card);
+  border: 1px solid rgba(249, 115, 22, 0.2);
+  color: var(--text-primary);
+  border-radius: 6px;
+  padding: 0.5rem;
+  width: 80px;
+  text-align: center;
+}
+
+.afm-app .score-input input:focus {
+  border-color: var(--accent);
+  outline: none;
+}
+
+.afm-app .total-score {
+  background: rgba(249, 115, 22, 0.1);
+  border: 1px solid rgba(249, 115, 22, 0.3);
+  border-radius: 8px;
+  padding: 1rem;
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-weight: 600;
+}
+
+.afm-app .total-score .score-value {
+  color: var(--accent);
+  font-size: 1.25rem;
+}
+
+.afm-app .improvement-tips {
+  background: linear-gradient(135deg, #242b3d 0%, #1a1f2e 100%);
+  border: 1px solid rgba(249, 115, 22, 0.1);
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-top: 2rem;
+}
+
+.afm-app .improvement-tips h4 {
+  color: var(--accent);
+  margin-bottom: 1rem;
+}
+
+.afm-app .improvement-tips ul {
+  list-style: none;
+  padding: 0;
+}
+
+.afm-app .improvement-tips li {
+  padding: 0.75rem 0;
+  padding-left: 1.5rem;
+  position: relative;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+.afm-app .improvement-tips li::before {
+  content: "→";
+  position: absolute;
+  left: 0;
+  color: var(--accent);
+  font-weight: bold;
+}
+
+.afm-app .palette-item.current {
+  background: rgba(249, 115, 22, 0.2);
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+/* ============================================
+   DIFFICULTY BADGES
+   ============================================ */
+
+.afm-app .difficulty-badge.difficulty-easy {
+  background: rgba(16, 185, 129, 0.15);
+  color: var(--success);
+  border: 1px solid rgba(16, 185, 129, 0.3);
+}
+
+.afm-app .difficulty-badge.difficulty-medium {
+  background: rgba(251, 191, 36, 0.15);
+  color: var(--warning);
+  border: 1px solid rgba(251, 191, 36, 0.3);
+}
+
+.afm-app .difficulty-badge.difficulty-hard {
+  background: rgba(239, 68, 68, 0.15);
+  color: var(--error);
+  border: 1px solid rgba(239, 68, 68, 0.3);
+}
+
+/* ============================================
+   ANIMATIONS
+   ============================================ */
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.afm-app .dashboard,
+.afm-app .mcq-practice,
+.afm-app .long-answer-practice {
+  animation: fadeIn 0.3s ease;
+}
+
+/* ============================================
+   RESPONSIVE DESIGN
+   ============================================ */
+
+@media (max-width: 768px) {
+  .afm-app .dashboard-hero {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .afm-app .hero-stats {
+    flex-direction: column;
+  }
+
+  .afm-app .action-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .afm-app .topics-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
